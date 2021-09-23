@@ -6,26 +6,17 @@ The goal of the project is to demonstrate the principles of project manager, con
 
 Below are links to the Trello Board and Google Sheets Plan for the project.
 
-* A link to a Trello board for the project
+* A link to a Trello board for the project: [Trello Board](https://trello.com/invite/b/etbnUf31/b86a08131718cbb6a897d8c9e64812fb/udacity-cicd-project)
 
-[Trello Board](https://trello.com/invite/b/etbnUf31/b86a08131718cbb6a897d8c9e64812fb/udacity-cicd-project)
-
-
-* A link to a spreadsheet that includes the original and final project plan>
-
-[Google Sheet](https://docs.google.com/spreadsheets/d/1J4IJ6MtrwWjDxFMhZ4iPvKVqBqMQsCUKJnpsnHzpDKc/edit?usp=sharing)
+* A link to a spreadsheet that includes the original and final project plan [Google Sheet](https://docs.google.com/spreadsheets/d/1J4IJ6MtrwWjDxFMhZ4iPvKVqBqMQsCUKJnpsnHzpDKc/edit?usp=sharing)
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+![Architectural Diagram](images/architectural-diagram.png "Architectural Diagram")
 
 * Project running on Azure App Service
 
 ![Azure App Service](images/azure-app-service.png "Azure App Service")
-
 
 * Project cloned into Azure Cloud Shell
 
