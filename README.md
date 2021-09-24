@@ -12,33 +12,77 @@ Below are links to the Trello Board and Google Sheets Plan for the project.
 
 ## Instructions
 
+The following are instructions to perform a code change, deployment and execution of the predictor app. Below is diagram that describes the overall process and architecture.
+
 ![Architectural Diagram](images/architectural-diagram.png "Architectural Diagram")
 
-* Project running on Azure App Service
+1. Clone the repository, `https://github.com/ericwgreene/cicd-project.git`, into your cloud shell environment.
 
-![Azure App Service](images/azure-app-service.png "Azure App Service")
-
-* Project cloned into Azure Cloud Shell
+```bash
+git clone https://github.com/ericwgreene/cicd-project.git
+```
 
 ![Cloned to Azure Cloud Shell](images/clone-to-azure-cloud-shell.png "Cloned to Azure Cloud Shell")
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+2. Change into the `cicd-project` folder (or whatever folder name you cloned it into).
+
+```bash
+cd cicd-project
+```
+
+3. Create and activate a Python 3 virtual environment.
+
+```bash
+python3.7 -m venv venv
+
+source ./venv/bin/activate
+```
+
+4. Perform package updates and installs.
+
+```bash
+python -m pip install --upgrade pip
+
+python -m pip install -r ./requirements.txt
+```
+
+5. Using an editor, Vi or Nano, make your desired changes.
+
+6. After making your changes, verify that all tests pass. There are no tests for the Boston Housing code, but this step was part of the scaffolding project, and would normally be a part of a real application.
+
+```bash
+make all
+```
 
 ![Make All Cloud Shell](images/make-all-azure-cloud-shell.png "Make All Cloud Shell")
 
+7. Commit and push your code to GitHub.
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+```bash
+git add -A
+
+git commit -m "short description of changes"
+
+git push
+```
+
+8. As part of the scaffolding project a GitHub action was configured to run the tests when new code was pushed. The final project did not require this, but here is a screenshot of it.
+
+![GitHub Action Result](images/github-action-result.png "GitHub Action Result")
+
+9. Azure Pipelines is configured to run on new commits to the GitHub repository, so the Azure Deployment Pipeline should kick off automatically.
 
 ![Azure Pipeline Successful Build](images/azure-pipeline-successful-build.png "Azure Pipeline Successful Build")
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+10. Once Azure Pipeline builds the deployment package, it will deploy to the Azure App Service.
 
 ![Azure Pipeline Deployment](images/azure-pipeline-deployment.png "Azure Pipeline Deployment")
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+Here is a screenshot of the running App Service.
 
-![Azure Pipeline Deployment](images/predictor-app-cloud-shell.png "Azure Pipeline Deployment")
+![Azure App Service](images/azure-app-service.png "Azure App Service")
+
+11. With the deployment complete, the `make_predict_azure_app.sh` can be executed in the cloud shell to make a prediction.
 
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
@@ -46,11 +90,17 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
-* Output of streamed log files from deployed application
+![Cloud Shell Prediction](images/predictor-app-cloud-shell.png "Cloud Shell Prediction")
+
+12. To view the logs of the App Service, run the following command from the cloud shell.
+
+```bash
+az webapp log tail
+```
+
+The output should look similar to this.
 
 ![Live Stream Logs](images/live-stream-log.png "Live Stream Logs")
-
-
 
 ## Enhancements
 

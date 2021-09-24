@@ -6,13 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Wed Sep 22 22:01:31 2021
+# Make data base, printed on Fri Sep 24 18:55:10 2021
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -44,15 +42,15 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.googlecode.iterm2
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/93/dxrs0zf54kxbty50rbctb86h0000gn/T/vscode-ipc-5d28c6b7-c2a0-4097-86d8-c0a5d12c537d.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/93/dxrs0zf54kxbty50rbctb86h0000gn/T/vscode-ipc-a79f6e64-96d3-43f3-848b-65a890b4c91b.sock
 # environment
-VSCODE_CWD = /Users/ericwgreene/git/github.com/ericwgreene/cicd-project
+VSCODE_CWD = /Users/ericwgreene/git/t4dclassfiles/bootcamp_09202021_d69Bx9gebKGtg8cEYxrt
 # environment
 PATH = /Users/ericwgreene/.pyenv/shims:/Users/ericwgreene/.pyenv/bin:/Users/ericwgreene/.nvm/versions/node/v14.17.5/bin:/usr/local/sbin:/Users/ericwgreene/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
 # environment
 NVM_BIN = /Users/ericwgreene/.nvm/versions/node/v14.17.5/bin
 # environment
-LaunchInstanceID = C82637D5-58CB-4EE5-A72A-9702AEBBB47F
+LaunchInstanceID = 7AB308E2-E628-43D3-B603-428C2FE8811E
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -62,7 +60,7 @@ PYENV_ROOT = /Users/ericwgreene/.pyenv
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.zpTGXWGN0F/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.mEVPJ6M9vM/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -112,7 +110,7 @@ USER = ericwgreene
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t0p0:541C4F70-1B0F-4A69-8752-24EEF0D09E04
+TERM_SESSION_ID = w0t0p0:47CCA3AB-BF9F-4ABA-B363-871DC30762C0
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -148,7 +146,7 @@ LC_TERMINAL_VERSION = 3.4.10
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t0p0:541C4F70-1B0F-4A69-8752-24EEF0D09E04
+ITERM_SESSION_ID = w0t0p0:47CCA3AB-BF9F-4ABA-B363-871DC30762C0
 # environment
 COLORFGBG = 15;0
 # environment
@@ -175,13 +173,12 @@ SUFFIXES :=
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
- 
 # environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 45104
+VSCODE_PID = 11134
 # environment
 DOTNET_CLI_TELEMETRY_OPTOUT = 1
 # variable set hash-table stats:
@@ -193,7 +190,7 @@ DOTNET_CLI_TELEMETRY_OPTOUT = 1
 
 # Directories
 
-# . (device 16777225, inode 150146544): 18 files, no impossibilities.
+# . (device 16777222, inode 150146544): 18 files, no impossibilities.
 
 # 18 files, no impossibilities in 1 directories.
 
@@ -301,6 +298,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Sep 22 22:01:31 2021
+# Finished Make data base on Fri Sep 24 18:55:10 2021
 
  
