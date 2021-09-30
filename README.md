@@ -4,7 +4,7 @@ The goal of the project is to demonstrate the principles of project manager, con
 
 ## Project Plan
 
-Below are links to the Trello Board and Google Sheets Plan for the project.
+Below are links to the Trello Board and Google Sheets Plan.
 
 * A link to a Trello board for the project: [Trello Board](https://trello.com/invite/b/etbnUf31/b86a08131718cbb6a897d8c9e64812fb/udacity-cicd-project)
 
